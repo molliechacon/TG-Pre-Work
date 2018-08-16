@@ -98,7 +98,6 @@ footer {
   border: 1px solid #466995;
   margin: 20px;
   display: inline-block;
-  float: left;
 }
 
 .answer:hover {

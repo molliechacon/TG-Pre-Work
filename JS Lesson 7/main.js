@@ -1,11 +1,9 @@
-let myPlaces = ['Greece', 'Peru', 'Scotland'];
-let friendPlaces = ['Ireland', 'Greece', 'China'];
+let cards = ['Diamond', 'Spade', 'Heart', 'Club'];
+let currentCard = 'Heart';
 
-for (let myPlacesIndex = 0; myPlacesIndex < myPlaces.length; myPlacesIndex++) {
-  for (let friendPlacesIndex = 0; friendPlacesIndex < friendPlaces.length; friendPlacesIndex++) {
-    if(myPlaces[myPlacesIndex] === friendPlaces[friendPlacesIndex]) {
-      console.log(myPlaces[myPlacesIndex]);
-      console.log(friendPlaces[friendPlacesIndex]);
-    }
-  }
+while (currentCard !== 'Spade') {
+  console.log(currentCard);
+  currentCard = cards[Math.floor(Math.random() *4)];
 }
+
+console.log('found a spade');

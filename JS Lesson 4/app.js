@@ -5,3 +5,4 @@ const takeOrder = (topping, crustType) => {
 takeOrder("mushrooms", "crispy crust");
 takeOrder("tomatoes", "thin crust");
 takeOrder("spinach", "deep dish");
+// added two more instances of the function

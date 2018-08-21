@@ -9,7 +9,7 @@ if (wordCount) {
 
 let favoritePhrase = 'You either make yourself miserable or make yourself strong; the amount of work is the same';
 
-if (favoritePhrase) {
+if (!favoritePhrase) {
   console.log("This string doesn't seem to be empty.");
 } else {
   console.log('This string is definitely empty.');

@@ -1,3 +1,3 @@
-let bucketList = ['Rappel into a cave', 'Take a falconry class', 'Learn to juggle'];
+const newYearsResolutions = ['diet', 'work out', 'get more sleep'];
 
-console.log(bucketList);
+console.log(newYearsResolutions);

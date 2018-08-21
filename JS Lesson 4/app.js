@@ -1,9 +1,10 @@
-function isGreaterThan(numberOne, numberTwo) {
-  if(numberOne > numberTwo) {
+const isGreaterThan = (numberOne, numberTwo) => {
+    if(numberOne > numberTwo){
     return true;
   } else {
     return false;
-  };
-}
+  }
+};
 
-console.log(isGreaterThan(7,12));
+console.log(isGreaterThan(4, 8));
+

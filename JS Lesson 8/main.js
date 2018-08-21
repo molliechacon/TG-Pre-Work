@@ -1,24 +1,20 @@
-let animals = ['Hen', 'elephant', 'llama', 'leopard', 'ostrich', 'Whale', 'octopus', 'rabbit', 'lion', 'dog'];
+let randomNumbers = [375, 200, 3.14, 7, 13, 852];
 
-// Create the secretMessage array below
-//let secretMessage = animals.map(function(animalType) {
-//  return animalType[0];
+// Call .filter() on randomNumbers below
+//let smallNumbers = randomNumbers.filter(function(num) {
+//  return num < 250;
 //});
 
-//Refactored to an arrow function
-let secretMessage = animals.map(animalType => animalType[0]);
-
-console.log(secretMessage.join(''));
-
-let bigNumbers = [100, 200, 300, 400, 500];
-
-// Create the smallNumbers array below
-//let smallNumbers = bigNumbers.map(function(bigNum) {
-//  return bigNum / 100;
-//});
-
-//Refactored to an arrow function
-let smallNumbers = bigNumbers.map(bigNum => bigNum / 100);
+// Refactored to arrow function
+let smallNumbers = randomNumbers.filter(num => num < 250);
 
 console.log(smallNumbers);
 
+let favoriteWords = ['nostalgia', 'hyperbole', 'fervent', 'esoteric', 'serene'];
+
+//let longFavoriteWords = favoriteWords.filter(function(word) {
+//  return word.length > 7;
+//});
+
+// Refactor the code above using arrow function syntax
+let longFavoriteWords = favoriteWords.filter(word => word.length > 7);

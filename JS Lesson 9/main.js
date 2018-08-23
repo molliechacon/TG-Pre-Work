@@ -8,6 +8,9 @@ let person = {
   weekAlarm: 'Alarm set to 7am',
   sayHello: () => {
     return('Hello, there!');
+  },
+  sayGoodbye() {
+    return("Goodbye!");
   }
 };
 
@@ -23,3 +26,4 @@ if (day === "Saturday" || day === "Sunday") {
 console.log(person[alarm]);
 console.log(person.hobbies);
 console.log(person.sayHello());
+console.log(person.sayGoodbye());

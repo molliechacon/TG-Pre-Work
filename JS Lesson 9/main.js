@@ -7,7 +7,8 @@ let person = {
   weekendAlarm: 'No alarms needed',
   weekAlarm: 'Alarm set to 7am',
   sayHello: () => {
-    return('Hello, there!');
+    // COULD NOT GET THIS.NAME TO WORK!!! SOMEHOW, PERSON.NAME WORKS JUST FINE.
+    return(`Hello, my name is ${person.name}`);
   },
   sayGoodbye() {
     return("Goodbye!");

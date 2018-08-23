@@ -9,6 +9,7 @@ let person = {
 };
 
 person.hobbies = ['Kickboxing', 'Reading'];
+person.hobbies = ['Knitting'];
 
 if (day === "Saturday" || day === "Sunday") {
   alarm = 'weekendAlarm';

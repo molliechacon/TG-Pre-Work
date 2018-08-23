@@ -15,6 +15,10 @@ class HospitalEmployee {
   takeVacationDays(daysOff) {
     this._remainingVacationDays -= daysOff;
   }
+  
+  static generatePassword() {
+    return Math.floor(Math.random()*10000);
+  }
 }
 
 class Nurse extends HospitalEmployee {
@@ -37,3 +41,4 @@ nurseOlynyk.takeVacationDays(5);
 console.log(nurseOlynyk.remainingVacationDays);
 nurseOlynyk.addCertification('Genetics');
 console.log(nurseOlynyk.certifications);
+console.log(Nurse.generatePassword());

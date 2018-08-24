@@ -10,14 +10,19 @@ const responseField = document.querySelector('#responseField');
 // AJAX function
 const getSuggestions = () => {
   const wordQuery = inputField.value;
-  const endpoint = url + queryParams + wordQuery;
+  const endpoint = `${url}${queryParams}${wordQuery}`;
+  
   fetch(endpoint).then(response => {
     if (response.ok) {
       return response.json();
-    } throw new Error ('Request failed!');
+    }
+    throw new Error('Request failed!');
   }, networkError => {
-    console.log(networkError.message);
-  });
+    console.log(networkError.message)
+  })
+    .then(jsonResponse => {
+      renderResponse(jsonResponse);
+  })
 }
 
 // Clears previous results and display results to webpage

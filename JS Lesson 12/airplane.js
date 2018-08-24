@@ -1,5 +1,9 @@
 let Airplane = {};
 
-Airplane.myAirplane = "StarJet";
-
-module.exports = Airplane;
+module.exports = {
+  myAirplane: "CloudJet",
+  
+  displayAirplane: function() {
+    return this.myAirplane;
+  }
+};
